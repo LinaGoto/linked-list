@@ -1,4 +1,5 @@
 #include "node.h"
+#include "student.h"
 
 Node::Node(Student*){
   value = 0;
@@ -10,14 +11,10 @@ Node::~Node(){
   next = NULL;
 }
 
-Node*Node::gextNext(){
+Node* Node::gextNext(){
   return next;
 }
 
-Student* getStudent(){
-  return student;
-}
-
-viod Node::setNext(Node* newnext){
+void Node::setNext(Node* newnext){
   next = newnext;
 }
